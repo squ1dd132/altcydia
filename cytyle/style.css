@@ -571,7 +571,7 @@ fieldset>textarea {
 .cytyle-flat panel>fieldset>a,
 .cytyle-flat panel>fieldset>div,
 .cytyle-flat panel>fieldset>textarea {
-	border-bottom: 1px solid #c8c7cc
+	/* border-bottom: 1px solid #c8c7cc */
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
