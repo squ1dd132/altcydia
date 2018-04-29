@@ -1,0 +1,42 @@
+div.cy-table > fieldset > a {
+    height: 73px;
+}
+
+div.cy-table > fieldset > a > img.icon {
+    position: absolute;
+    top: 10px; left: 10px;
+    width: 30px; height: 30px;
+    margin: 0px;
+}
+
+div.cy-table > fieldset > a > label.title {
+    position: absolute;
+    top: 8px; left: 48px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+div.cy-table > fieldset > a > label.description {
+    position: absolute;
+    top: 46px; left: 12px;
+    font-size: 14px;
+    color: #666666;
+}
+
+div.cy-table > fieldset > a > label.author {
+    position: absolute;
+    top: 29px; left: 58px;
+    font-size: 12px;
+}
+
+span.free { background-color: #aaaabb !important; }
+span.commercial { background-color: #2463de !important; }
+span.complex { background-color: #849fd4 !important; }
+
+div.cy-table > fieldset.editorial > div {
+    padding: 12px;
+}
+
+div.cy-table > fieldset.editorial > div > p {
+    text-align: left;
+}

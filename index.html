@@ -1,0 +1,626 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="cytyle/style.css">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <script type="text/javascript" src="fastclick/lib/fastclick.js"></script><script type="text/javascript" src="cytyle/style-3c578a2a65b28de08a903cddcf2ea0feae341e61.js"></script><script type="text/javascript">if(navigator.userAgent.search(/Cydia/)!=-1){var title=document.title;var dot=title.indexOf('·');if(dot!=-1)
+            document.title=title.substring(0,dot);}
+        </script><script type="text/javascript" src="ui/ios~ipad/1.1/home/../menes/menes.js"></script><script type="text/javascript" src="ui/ios~ipad/1.1/home/../appcache.js"></script><script type="text/javascript" src="ui/ios~ipad/1.1/home/../localize.js"></script><script type="text/javascript" src="ui/ios~ipad/1.1/home/../featured.js"></script>
+        <style type="text/css">fieldset.spots{background-color:#e7f0f7}</style>
+        <style type="text/css">fieldset.spots>a>div>div>label+label{color:#193250}</style>
+        <script type="text/javascript">var badge=function(name){var node=document.getElementById('badge-'+name);if(node==null)
+            return;node.parentNode.removeChild(node);return true;};
+        </script>
+        <style type="text/css">html .dmca2015{display:none}html.dmca2015 .dmca2015{display:block}</style>
+        <script type="text/javascript">if(typeof cydia.addTokenHost!='undefined')
+            cydia.addTokenHost('depictions.intelliborn.com');if(typeof cydia.addInsecureHost!='undefined')
+            cydia.addInsecureHost('depictions.intelliborn.com');if(typeof cydia.addBridgedHost!='undefined')
+            cydia.addBridgedHost('depictions.intelliborn.com');var unknown=-1;if(typeof window.localStorage!='undefined'){var token=localStorage.getItem('v0:cydia_token');if(token!=null)
+            cydia.setToken(token);if(typeof cydia.getAllSources!='undefined'){var touch=false;unknown=0;var known=['deb:http://www.cycript.org/debs/:./','deb:http://repo666.ultrasn0w.com/:./','deb:http://apt.thebigboss.org/repofiles/cydia/:stable','deb:http://cydia.zodttd.com/repo/cydia/:stable','deb:http://apt.modmyi.com/:stable',];var sources=cydia.getAllSources();for(var source in sources){source=sources[source];var key=source.key;if(key.substring(0,31)!='deb:http://apt.saurik.com/:ios/'&&known.indexOf(key)==-1)
+            ++unknown;}
+            if(touch){if(typeof cydia.saveConfig!='undefined')
+            cydia.saveConfig();}}
+            if(typeof cydia.addTrivialSource!='undefined'){if(localStorage.getItem('v0:had_ultrasn0w')=='true'){cydia.addTrivialSource('http://repo666.ultrasn0w.com/');if(typeof cydia.saveConfig!='undefined')
+            cydia.saveConfig();localStorage.setItem('v0:had_ultrasn0w','false');}}}
+            var headers={};var header=function(value,name){if(typeof value!='undefined'&&value!=null&&value.length!=0)
+            headers[name]=value;};var mcc=cydia.mcc;var mnc=cydia.mnc;var operator=cydia.operator;var model=cydia.model;var ecid=cydia.ecid;var firmware=cydia.firmware;header(unknown,'X-Cydia-Unknown-Count');header(ecid,'X-Cydia-Ecid');header(mcc,'X-Cydia-Mcc');header(mnc,'X-Cydia-Mnc');header(operator,'X-Cydia-Operator');header(model,'X-Machine');header(cydia.role,'X-Role');if(operator=='T - Mobile')
+            operator='T-Mobile';$.xhr('https://cydia.saurik.com/api/home?v=2','POST',headers,null,{'success':function(value){value=eval(value);var message=null;if(typeof value.message!='undefined'){message=value.message;if(message=='')
+            message=null;}
+            if(message==null)
+            $('.message').remove();else{$('.message').removeClass('hidden');$('#message').html(message);}
+            if(typeof value.error!='undefined'){var error=value.error;if(error!=null&&error!=''){$('.error').removeClass('hidden');$('#error').html(error);}}
+            if(typeof value.token!='undefined'){if(typeof window.localStorage!='undefined')
+            localStorage.setItem('v0:cydia_token',value.token);cydia.setToken(value.token);}
+            if(typeof value.unseen!='undefined'){for(var unseen in value.unseen){unseen=value.unseen[unseen];$('#badge-'+unseen).removeClass('hidden');}}
+            if(typeof value.classes!='undefined'){for(var clazz in value.classes){clazz=value.classes[clazz];document.documentElement.className+=' '+clazz;}}},});var format=function(id,format,arguments){var value=cydia.format(format,arguments);var element=document.getElementById(id);if(element!=null)
+            element.innerHTML=value;};document.title=cydia.localize("HOME","Home");
+        </script>
+        <style type="text/css">.hidden{display:none}.no-youmail{display:none}panel.left{position:absolute;top:0px;margin-left:-123px;width:320px}panel.right{position:relative;padding-top:39px;left:170px;width:320px}</style>
+    </head>
+    <body class="pinstripe">
+        <div style="height:2px;width:100%">
+            <div style="background-color:red;height:2px;width:0" id="progress"></div>
+        </div>
+        <panel class="right">
+            <label>
+                <p>Extensions Useful on iPad</p>
+            </label>
+            <fieldset>
+                <a href="index.html">
+                    <img class="icon" src="icon/libactivator.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Activator</p>
+                            </label>
+                            <label class="verbose">
+                                <p>customize buttons and gestures<br>to do useful shortcut actions</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <img class="icon" src="icon/org.herf.flux.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>f.lux</p>
+                            </label>
+                            <label class="verbose">
+                                <p>make screen colors "warmer" at night<br>(more comfortable for your eyes)</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <img class="icon" src="icon/com.booleanmagic.fullforce.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>FullForce</p>
+                            </label>
+                            <label class="verbose">
+                                <p>make older apps fullscreen<br>(if not iPad-optimized already)</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" data-cy-ios="4 5 6 7">
+                    <img class="icon" src="icon/us.hannahpappah.incarcerapp.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>IncarcerApp</p>
+                            </label>
+                            <label class="verbose">
+                                <p>limit use of home button<br>great for playful children</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <img class="icon" src="icon/ws.hbang.ncpad.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>NCPad</p>
+                            </label>
+                            <label class="verbose">
+                                <p>make notification banners wider<br>full width for iPad screens</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" data-cy-ios="4 5 6">
+                    <img class="icon" src="icon/sbsettings.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>SBSettings</p>
+                            </label>
+                            <label class="verbose">
+                                <p>instant drop-down panel<br>for changing settings</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" data-cy-ios="4 5 6">
+                    <img class="icon" src="icon/com.rpetrich.splitmail.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>SplitMail</p>
+                            </label>
+                            <label class="verbose">
+                                <p>better Mail app in portrait mode<br>with a sidebar like in landscape</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <img class="icon" src="icon/com.iky1e.swipeselection.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>SwipeSelection</p>
+                            </label>
+                            <label class="verbose">
+                                <p>edit text faster<br>(keyboard gestures)</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+            </fieldset>
+            <label>
+                <p>Products Designed for iPad</p>
+            </label>
+            <fieldset>
+                <a href="index.html" data-cy-ios="6">
+                    <img class="icon" src="icon/org.thebigboss.auxopad.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Auxo</p>
+                            </label>
+                            <label class="verbose">
+                                <p>add features to multitasking bar<br>app previews and settings shortcuts</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <img class="icon" src="icon/com.aaronash.barrel.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Barrel</p>
+                            </label>
+                            <label class="verbose">
+                                <p>curl, whirl, and fade through icons<br>fun home screen page transitions</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <img class="icon" src="icon/ch.ringwald.btc-mouse.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Bluetooth Mouse &amp; Trackpad</p>
+                            </label>
+                            <label class="verbose">
+                                <p><br></p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" data-cy-ios="4 5 6 7">
+                    <img class="icon" src="icon/com.booleanmagic.displayout.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>DisplayOut</p>
+                            </label>
+                            <label class="verbose">
+                                <p>mirror screen to TVs<br>also monitors and projectors</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" data-cy-ios="5 6">
+                    <img class="icon" src="icon/org.thebigboss.emblem.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Emblem</p>
+                            </label>
+                            <label class="verbose">
+                                <p>OS X style notifications<br>with graceful animations</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" data-cy-ios="4 5 6">
+                    <img class="icon" src="icon/jp.ashikase.folderenhancer.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>FolderEnhancer</p>
+                            </label>
+                            <label class="verbose">
+                                <p>put folders in folders<br>with lots of apps</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" data-cy-ios="7 8">
+                    <img class="icon" src="icon/jp.ashikase.folderenhancer2.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>FolderEnhancer</p>
+                            </label>
+                            <label class="verbose">
+                                <p>put folders in folders<br>with lots of apps</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" data-cy-ios="4 5 6">
+                    <img class="icon" src="icon/com.yllier.fullscreensafari.ipad.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>FullScreen</p>
+                            </label>
+                            <label class="verbose">
+                                <p>add more gestures to Safari<br>for convenience and fun</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <img class="icon" src="icon/eu.heinelt.ifile.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>iFile</p>
+                            </label>
+                            <label class="verbose">
+                                <p>powerful file manager for all local files<br>browse, edit, transfer, and more</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" data-cy-ios="5 6">
+                    <img class="icon" src="icon/org.thebigboss.mountaincenter.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>MountainCenter</p>
+                            </label>
+                            <label class="verbose">
+                                <p>notification center<br>in the style of OS X</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <img class="icon" src="icon/net.joedj.nitrous.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Nitrous</p>
+                            </label>
+                            <label class="verbose">
+                                <p>make JavaScript much faster<br>in Chrome and other apps</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" data-cy-ios="5 6 7">
+                    <img class="icon" src="icon/com.rpetrich.retinapad.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>RetinaPad</p>
+                            </label>
+                            <label class="verbose">
+                                <p>HD display for iPhone apps<br>how 2x mode should work</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" data-cy-ios="4 5 6">
+                    <img class="icon" src="icon/net.howett.safaridownloader.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Safari Download Manager</p>
+                            </label>
+                            <label class="verbose">
+                                <p><br></p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <img class="icon" src="icon/com.rpetrich.videopane.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>VideoPane</p>
+                            </label>
+                            <label class="verbose">
+                                <p>picture-in-picture for video<br>multitask while playing movies</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="index.html" data-cy-ios="5 6">
+                    <img class="icon" src="icon/com.chpwn.zephyr.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Zephyr</p>
+                            </label>
+                            <label class="verbose">
+                                <p>never use the home button again<br>(critical if that button is broken)</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+            </fieldset>
+        </panel>
+        <panel class="left">
+            <script type="text/javascript">var script=document.createElement('script');script.type='text/javascript';script.src='ads.js';script.async=true;var child=document.getElementsByTagName('script')[0];child.parentNode.insertBefore(script,child);var cyAdVersion=1;var cyRenderAd=function(spot,ad){spot.href(ad.href);spot.xpath("./img").src(ad.icon);var labels=spot.xpath("./div/div/label/p");labels[0].innerHTML=ad.name;if(ad.text.indexOf('\n')==-1)
+                labels[1].parentNode.setAttribute("class","detail");labels[1].innerHTML=$.xml(ad.text).replace('\n','<br>');};var cyRenderAds=function(){var index=0;$(".spot").each(function(spot){var ad=null;if(index==1||index==2)
+                ad=cyGetAd('intelliborn');if(ad==null)
+                ad=cyGetAd('saurikit');if(ad==null)
+                ad=cyGetAd('cydia');if(ad==null)
+                ad=cyGetAd('featured');if(ad==null)
+                ad=cyGetAd('intelliborn');if(ad!=null)
+                cyRenderAd(spot,ad);++index;});};
+            </script>
+            <div style="margin:9px;padding:0 16px">
+                <style type="text/css">.cytyle-faux #logo{background-image:url(icon_2x/cydia6.png);background-size:59px 60px;width:59px}.cytyle-flat #logo{background-image:url(icon_2x/cydia7.png);background-size:60px 60px;width:60px}</style>
+                <div id="logo" style="position:absolute;display:inline-block;height:60px;vertical-align:middle" alt="Cydia Logo"></div>
+                <p style="padding-top:8px;margin-left:70px;text-align:center;display:block;height:60px;text-rendering:optimizeLegibility"><span style="font-size:20px">Cydia</span><br><span style="font-size:14px">Redesign by Squ1dd13.</a></span></p>
+            </div>
+            <block class="error hidden" style="background-color:red;font-weight:bold;border:3px solid #000">
+                <p id="error"></p>
+            </block>
+            <fieldset style="background-color:transparent">
+                <div class="message hidden" style="font-weight:bold;font-size:14px">
+                    <p id="message"></p>
+                </div>
+                <a href="https://www.facebook.com/Cydia" class="left">
+                    <img class="icon" src="icon/facebook.png" alt="Facebook">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Cydia</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="http://twitter.com/saurik" class="right">
+                    <img class="icon" src="icon/twitter.png" alt="Twitter">
+                    <div>
+                        <div>
+                            <label>
+                                <p>saurik</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+            </fieldset>
+            <fieldset class="half">
+                <a href="featured.html" onclick="return badge('featured')">
+                    <img class="icon" src="ui/ios~ipad/1.1/home/featured.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Featured</p>
+                            </label>
+                            <label class="hidden badge" id="badge-featured">
+                                <p>New</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+            </fieldset>
+            <fieldset class="more">
+                <a href="themes.html" onclick="return badge('themes')">
+                    <img class="icon" src="ui/ios~ipad/1.1/home/themes.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Themes</p>
+                            </label>
+                            <label class="hidden badge" id="badge-themes">
+                                <p>New</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+            </fieldset>
+            <fieldset class="spots">
+                <a class="spot">
+                    <img class="icon">
+                    <div>
+                        <div>
+                            <label>
+                                <p> </p>
+                            </label>
+                            <label class="verbose">
+                                <p> </p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a class="spot">
+                    <img class="icon">
+                    <div>
+                        <div>
+                            <label>
+                                <p> </p>
+                            </label>
+                            <label class="verbose">
+                                <p> </p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+            </fieldset>
+            <fieldset style="background-color:#eefff0">
+                <a href="account.html" onclick="return badge('account')">
+                    <img class="icon" src="ui/ios~ipad/1.1/home/account.png">
+                    <div>
+                        <div>
+                            <label id="account">
+                                <p>Manage Account</p>
+                            </label>
+                            <label class="hidden badge" id="badge-account">
+                                <p>New</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+            </fieldset>
+            <fieldset class="spots">
+                <a class="spot">
+                    <img class="icon">
+                    <div>
+                        <div>
+                            <label>
+                                <p> </p>
+                            </label>
+                            <label class="verbose">
+                                <p> </p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a class="spot">
+                    <img class="icon">
+                    <div>
+                        <div>
+                            <label>
+                                <p> </p>
+                            </label>
+                            <label class="verbose">
+                                <p> </p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a class="spot">
+                    <img class="icon">
+                    <div>
+                        <div>
+                            <label>
+                                <p> </p>
+                            </label>
+                            <label class="verbose">
+                                <p> </p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+            </fieldset>
+            <label>
+                <p>User Guides</p>
+            </label>
+            <fieldset>
+                <a href="questions.html">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Frequently Asked Questions</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="copying.html">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Copying Files to/from Device</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="openssh.html">
+                    <div>
+                        <div>
+                            <label>
+                                <p>OpenSSH Access How-To</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="password.html">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Root Password How-To</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="storage.html">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Storage Information</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+            </fieldset>
+            <label>
+                <p>Community</p>
+            </label>
+            <fieldset>
+                <a href="http://reddit.com/r/jailbreak/">
+                    <img class="icon" src="icon/reddit.png">
+                    <div>
+                        <div>
+                            <label>
+                                <p>/r/jailbreak on Reddit</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+            </fieldset>
+            <label>
+                <p>Developers Only</p>
+            </label>
+            <fieldset>
+                <a href="faq/developing.html">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Useful Developer Resources</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+            </fieldset>
+            <fieldset>
+                <a href="credits.html">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Credits / Thank You</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+                <a href="policy/privacy.html">
+                    <div>
+                        <div>
+                            <label>
+                                <p>Privacy Policy</p>
+                            </label>
+                        </div>
+                    </div>
+                </a>
+            </fieldset>
+            <footer>
+                <p><span id="model"></span>, iOS <span id="firmware"></span>, Cydia<span id="bittage"></span>_<span id="client"></span> (en-us)<br><span id="device"></span></p>
+            </footer>
+            <script type="text/javascript">var update=function(){};document.addEventListener("CydiaReloadData",function(){update();});update();var model=cydia.model;$('#model').html($.xml(model));var firmware=cydia.firmware;$('#firmware').html($.xml(firmware));var installed=cydia.version;if(typeof installed=='undefined'){var package=cydia.getPackageById('cydia');var installed=package.installed;}
+                var bittage=cydia.bittage||32;$('#bittage').html($.xml(bittage.toString()));var version=installed.replace(/^([0-9.]*\+[0-9]*).*/,'$1');$('#client').html($.xml(version));var udid=cydia.device;$('#device').html($.xml(udid));
+            </script><script type="text/javascript">if(typeof window.localStorage!='undefined')
+                if(window.localStorage.getItem('v0:badge-application')==null)
+                $('#badge-application').css('display','block');
+            </script><script type="text/javascript">window.applicationCache.addEventListener('progress',function(e){var percent=Math.round(1000*e.loaded/e.total).toString();percent=percent.substring(0,percent.length-1)+'.'+percent.substring(percent.length-1);$('#progress').css("width",percent+'%');});</script>
+        </panel>
+    </body>
+</html>
