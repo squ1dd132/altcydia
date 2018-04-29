@@ -939,7 +939,7 @@ div.cy-table>label {
 }
 
 .cytyle-flat fieldset>.left {
-	border-right: 1px solid #c8c7cc
+	/* border-right: 1px solid #c8c7cc */
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
