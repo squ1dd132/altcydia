@@ -229,7 +229,7 @@ panel>fieldset {
 }
 
 .cytyle-flat panel>fieldset {
-	border-top: 1px solid #c8c7cc
+	/* border-top: 1px solid #c8c7cc */
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
