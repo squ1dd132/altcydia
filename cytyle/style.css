@@ -565,7 +565,7 @@ fieldset>textarea {
 .cytyle-faux panel>fieldset>a,
 .cytyle-faux panel>fieldset>div,
 .cytyle-faux panel>fieldset>textarea {
-	border-bottom: 1px solid #999
+	/* border-bottom: 1px solid #999 */
 }
 
 .cytyle-flat panel>fieldset>a,
@@ -975,7 +975,7 @@ panel>fieldset.half {
 }
 
 .cytyle-flat fieldset.half>a {
-	border-right: 1px solid #c8c7cc
+	/* border-right: 1px solid #c8c7cc */
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
