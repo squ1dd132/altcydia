@@ -222,7 +222,7 @@ panel>block {
 panel>fieldset {
 	position: relative;
 	display: block;
-	background-color: #fff;
+	background-color: #fff0;
 	margin-top: 9px;
 	margin-bottom: 9px
 }
