@@ -222,10 +222,9 @@ panel>block {
 panel>fieldset {
 	position: relative;
 	display: block;
-	background-color: #fff0;
+	background-color: rgba(255, 255, 255, .0);
 	margin-top: 9px;
 	margin-bottom: 9px
-	opacity: .0
 }
 
 .cytyle-faux panel>fieldset {
