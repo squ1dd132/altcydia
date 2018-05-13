@@ -225,6 +225,7 @@ panel>fieldset {
 	background-color: #fff0;
 	margin-top: 9px;
 	margin-bottom: 9px
+	opacity: .0
 }
 
 .cytyle-faux panel>fieldset {
